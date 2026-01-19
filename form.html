@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Add Contact</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/custom.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand text-uppercase" href="index.html">
+          <strong>Contact</strong> App
+        </a>
+      </div>
+    </nav>
+
+    <main class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="m-0">Add New Contact</h3>
+              </div>
+
+              <div class="card-body">
+                <form id="contactForm">
+                  <div class="mb-3">
+                    <label class="form-label">First Name</label>
+                    <input id="firstName" type="text" class="form-control" required />
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label">Last Name</label>
+                    <input id="lastName" type="text" class="form-control" required />
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input id="email" type="email" class="form-control" required />
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label">Phone</label>
+                    <input id="phone" type="text" class="form-control" required />
+                  </div>
+
+                  <div class="d-flex gap-2">
+                    <button class="btn btn-success" type="submit">
+                      <i class="fa fa-save"></i> Save
+                    </button>
+                    <a class="btn btn-secondary" href="index.html">Back</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="alert alert-info mt-3">
+              <strong>Note:</strong> Add works when json-server is running.
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="assets/js/form.js"></script>
+  </body>
+</html>
